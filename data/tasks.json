@@ -1,0 +1,5 @@
+{
+  "laser":{"size":5,"start":{"x":0,"y":4,"dir":0},"goal":[4,0],"obstacles":[[1,3],[2,3],[3,1]],"lasers":[[0,2],[2,0]],"maxProgram":16,"maxSteps":64},
+  "door":{"temperatureMax":40,"lightMin":50,"cases":[{"t":30,"l":70,"backup":false,"pressure":false},{"t":40,"l":50,"backup":false,"pressure":false},{"t":41,"l":70,"backup":true,"pressure":false},{"t":20,"l":49,"backup":false,"pressure":false},{"t":20,"l":0,"backup":true,"pressure":false},{"t":30,"l":70,"backup":false,"pressure":true},{"t":40,"l":49,"backup":true,"pressure":false},{"t":40,"l":50,"backup":true,"pressure":true}]},
+  "portal":{"budget":9,"nodes":{"S":[0,0],"A":[1,1],"B":[3,1],"C":[1,-1],"D":[3,-1],"P":[4,0]},"edges":[["S","A",2],["A","B",2],["B","P",3],["S","C",4],["C","P",7],["S","D",7],["D","P",5],["A","C",2],["C","B",2],["B","D",2]]}
+}
