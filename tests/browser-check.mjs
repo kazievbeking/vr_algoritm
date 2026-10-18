@@ -40,4 +40,4 @@ try{
   assert.deepEqual(errors,[]);assert.deepEqual(badRequests,[]);
   const report={passed:true,checks:['3D mouse ray','wrong laser program','reset during execution','duplicate run ignored','all three trials','door negative cases','over-budget route','valid non-optimal route','optimal route','final','resume','new game cancellation','three languages','corrupt save','mobile layout','no browser errors or failed requests'],errors,badRequests};
   await writeFile('artifacts/browser-report.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
-}catch(error){await page.screenshot({path:'artifacts/failure.png'});console.error({errors,badRequests});throw error;}finally{await browser.close();}
+}catch(error){await page.screenshot({path:'artifacts/failure.png'}).catch(()=>{});console.error({errors,badRequests});throw error;}finally{await browser.close();}
