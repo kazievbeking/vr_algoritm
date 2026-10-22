@@ -34,7 +34,7 @@ try{
   await click('finish');await page.screenshot({path:'artifacts/05-final.png'});
   await page.reload();await page.locator('#landing').waitFor({state:'visible'});assert.equal(await page.locator('#continue').isVisible(),true);await page.locator('#continue').click();await page.waitForTimeout(200);assert.deepEqual(await completed(),[true,true,true]);
   await click('new');await click('cancel-new');assert.deepEqual(await completed(),[true,true,true]);
-  await click('menu');await page.locator('#language').selectOption('ru');assert.equal(await page.locator('h1').innerText(),'Ловушка времени');await page.locator('#language').selectOption('en');assert.equal(await page.locator('h1').innerText(),'Time trap');await page.locator('#language').selectOption('kk');
+  await click('menu');await page.locator('#language').selectOption('ru');assert.equal(await page.locator('h1').innerText(),'Brain Hack');await page.locator('#language').selectOption('en');assert.equal(await page.locator('h1').innerText(),'Brain Hack');await page.locator('#language').selectOption('kk');assert.equal(await page.locator('h1').innerText(),'Brain Hack');assert.match(await page.title(),/^Brain Hack/);
   await page.evaluate(()=>localStorage.setItem('uaqyt-v1','{broken'));await page.reload();await page.locator('#landing').waitFor({state:'visible'});assert.equal(await page.locator('#continue').isVisible(),false);
   await page.setViewportSize({width:390,height:844});await page.screenshot({path:'artifacts/06-mobile.png'});assert.equal(await page.evaluate(()=>document.querySelector('#landing').scrollWidth<=innerWidth),true);
   assert.deepEqual(errors,[]);assert.deepEqual(badRequests,[]);

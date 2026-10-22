@@ -1,4 +1,4 @@
-# Уақыт тұзағы · CHRONOS
+# Brain Hack · CHRONOS
 
 10–11 сыныптарға арналған шағын білім беру WebXR квесті. Бір зертхана, үш алгоритмдік сынақ, аяқталған финал. Қазақша, орысша және ағылшынша. Компьютер мен Meta Quest бір ойын логикасын қолданады.
 
@@ -25,7 +25,7 @@ Git орнатылған және GitHub рұқсаты бар компьюте�
 ```sh
 git init
 git add .
-git commit -m "Build Uaqyt Tuzagy educational WebXR quest"
+git commit -m "Build Brain Hack educational WebXR quest"
 git branch -M main
 git remote add origin https://github.com/kazievbeking/vr_algoritm.git
 git push -u origin main
@@ -56,6 +56,11 @@ npm test
 Лазердің анықталған такттары, циклдер, соқтығысу, есіктің шекаралық мәндері, граф құны, Дейкстра, сақтау және аударма кілттері тексеріледі. Браузер интеграциясы үшін сыртқы `playwright-core` бумасына `PLAYWRIGHT_CORE`, Chromium/Edge орындалатын файлына `BROWSER_EXE` орнатып, `node tests/browser-check.mjs` орындаңыз. Бұл пакет ойын тәуелділігі емес.
 
 Нақты нәтижелер мен физикалық Quest чек-парағы: [docs/testileu.md](docs/testileu.md). Мұғалімге шешімдер: [docs/algoritmder.md](docs/algoritmder.md). Пайдалану: [docs/paidalanu-nusqaulygy.md](docs/paidalanu-nusqaulygy.md).
+
+Жеке құжаттар қазақ тілінде, бірінші жақтан жазылды:
+
+- [Үш сынақтың дұрыс шешімдері Word](docs/brain-hack-solutions.docx) · [мәтіндік нұсқа](docs/brain-hack-solutions.md)
+- [Жобаны қалай жүзеге асырдым Word](docs/brain-hack-implementation.docx) · [мәтіндік нұсқа](docs/brain-hack-implementation.md)
 
 ## Шектеулер
 

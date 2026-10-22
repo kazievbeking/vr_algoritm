@@ -26,6 +26,8 @@ jobs:
           mkdir _site
           cp index.html .nojekyll _site/
           cp -r assets css js data locales _site/
+          mkdir _site/docs
+          cp docs/brain-hack-*.docx docs/brain-hack-*.md _site/docs/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

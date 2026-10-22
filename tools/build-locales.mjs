@@ -1,6 +1,6 @@
 import {writeFileSync} from 'node:fs';
 const entries={
-title:['Уақыт тұзағы','Ловушка времени','Time trap'],
+title:['Brain Hack','Brain Hack','Brain Hack'],
 eyebrow:['ХРОНОС ЗЕРТХАНАСЫ / 2086','ЛАБОРАТОРИЯ ХРОНОС / 2086','CHRONOS LABORATORY / 2086'],
 subtitle:['Уақыт тоқтады. Шешім — сенің алгоритміңде.','Время остановилось. Решение — в твоём алгоритме.','Time has stopped. Your algorithm is the way out.'],
 intro:['Уақыт циклінде қалған зертхананы құтқар. Роботты басқар, қауіпсіздік жүйесін қалпына келтір және порталға қуат бер.','Спаси лабораторию из временного цикла. Запрограммируй робота, восстанови систему безопасности и запитай портал.','Free a laboratory trapped in a time loop. Program a robot, restore the safety system, and power the portal.'],
